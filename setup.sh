@@ -32,10 +32,10 @@ systemctl restart  postgresql
 netstat -tulpena | grep postgres
 sudo mkdir -p /sonarqube/
 cd /sonarqube/
-sudo curl -O https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.8.54436.zip
+sudo curl -O https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.7.52159.zip
 sudo apt-get install zip -y
-sudo unzip -o sonarqube-8.9.8.54436.zip -d /opt/
-sudo mv /opt/sonarqube-8.9.8.54436/ /opt/sonarqube
+sudo unzip -o sonarqube-8.9.7.52159.zip -d /opt/
+sudo mv /opt/sonarqube-8.9.7.52159/ /opt/sonarqube
 sudo groupadd sonar
 sudo useradd -c "SonarQube - User" -d /opt/sonarqube/ -g sonar sonar
 sudo chown sonar:sonar /opt/sonarqube/ -R
